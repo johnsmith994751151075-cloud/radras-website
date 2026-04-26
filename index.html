@@ -15,7 +15,10 @@
   <nav>
     <div class="container nav-inner">
       <div class="logo">RADRAS</div>
-      <a href="#contact" class="btn btn-sm">Book a Call</a>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <a href="#why-now" class="btn btn-sm btn-ghost" style="font-size:13px;">Why Now</a>
+        <a href="#contact" class="btn btn-sm">Book a Call</a>
+      </div>
     </div>
   </nav>
 
@@ -176,14 +179,102 @@
     </div>
   </section>
 
+  <!-- THREAT INTEL / CURRENT EVENTS -->
+  <section class="threats" id="why-now">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Why This Can't Wait</div>
+        <h2>The regulatory and threat landscape<br/>is accelerating — right now</h2>
+        <p class="section-sub">This isn't hypothetical risk. These are active enforcement actions, landmark breaches, and regulatory deadlines hitting companies exactly like yours.</p>
+      </div>
+      <div class="threats-grid">
+        <div class="threat-card">
+          <div class="threat-tag enforcement">Enforcement</div>
+          <div class="threat-date">2024 – Ongoing</div>
+          <h3>Change Healthcare Breach — $22B Impact</h3>
+          <p>The largest healthcare data breach in US history exposed 190 million patient records. UnitedHealth Group paid $22B in downstream costs. HIPAA enforcement actions are actively underway. If you touch PHI, your exposure window is now.</p>
+          <a href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" target="_blank" class="threat-link">HHS Enforcement Actions →</a>
+        </div>
+        <div class="threat-card">
+          <div class="threat-tag regulatory">Regulatory</div>
+          <div class="threat-date">Effective Dec 2023</div>
+          <h3>SEC Cybersecurity Disclosure Rules</h3>
+          <p>Public companies must now disclose material cybersecurity incidents within 4 business days. Boards are personally accountable for oversight. Investors and enterprise procurement teams are using this as a vendor vetting signal — before they sign.</p>
+          <a href="https://www.sec.gov/rules/final/2023/33-11216.pdf" target="_blank" class="threat-link">Read the Rule →</a>
+        </div>
+        <div class="threat-card">
+          <div class="threat-tag regulatory">Regulatory</div>
+          <div class="threat-date">2024 – Active</div>
+          <h3>FTC Data Security Enforcement Surge</h3>
+          <p>The FTC issued 72% more enforcement actions in 2024 than the prior year. Mid-market companies are now explicitly in scope — not just enterprises. Safeguards Rule violations carry fines of up to $51,744 per violation per day.</p>
+          <a href="https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know" target="_blank" class="threat-link">FTC Safeguards Rule →</a>
+        </div>
+        <div class="threat-card">
+          <div class="threat-tag market">Market Signal</div>
+          <div class="threat-date">2025 – Accelerating</div>
+          <h3>Enterprise Procurement Now Requires Proof</h3>
+          <p>Fortune 500 vendor questionnaires now routinely require ISO 27001 or SOC 2 as a baseline condition — not a differentiator. 68% of enterprise deals include a security review. Companies without certification are being disqualified pre-RFP.</p>
+          <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" class="threat-link">Verizon DBIR 2024 →</a>
+        </div>
+        <div class="threat-card">
+          <div class="threat-tag regulatory">Regulatory</div>
+          <div class="threat-date">Aug 2024 – EU</div>
+          <h3>EU AI Act — Compliance Obligations Live</h3>
+          <p>The EU AI Act entered into force August 2024. High-risk AI systems now require conformity assessments, documentation, and human oversight frameworks. Any company selling AI-powered products into Europe or to EU-regulated clients must act now.</p>
+          <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" class="threat-link">EU AI Act Text →</a>
+        </div>
+        <div class="threat-card">
+          <div class="threat-tag enforcement">Enforcement</div>
+          <div class="threat-date">2025 – Active</div>
+          <h3>Cyber Insurance Requiring Certification</h3>
+          <p>Underwriters are now conditioning coverage on demonstrable security controls. ISO 27001-certified companies pay 25–40% lower premiums. Uncertified companies are facing coverage denials or exclusions for ransomware — the #1 claim category.</p>
+          <a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/ransomware" target="_blank" class="threat-link">CISA Ransomware Guidance →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="contact-inner">
-        <h2>Ready to close the deals you've been losing?</h2>
-        <p>Start with a 30-minute conversation. We'll tell you exactly where your compliance gaps are and what it would take to close them.</p>
-        <a href="mailto:hello@radras.com" class="btn btn-primary btn-lg">hello@radras.com</a>
-        <p class="contact-sub">No pitch. No pressure. Just an honest assessment.</p>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2>Ready to close the deals<br/>you've been losing?</h2>
+          <p>Start with a 30-minute conversation. We'll tell you exactly where your compliance gaps are and what it would take to close them.</p>
+          <ul class="contact-promises">
+            <li>✓ No pitch. No pressure.</li>
+            <li>✓ Honest gap assessment — on the call.</li>
+            <li>✓ If we're not the right fit, we'll tell you.</li>
+          </ul>
+          <p class="contact-email-line">Or email us directly: <a href="mailto:hello@radras.com">hello@radras.com</a></p>
+        </div>
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xpwzgqoa" method="POST" class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" />
+            </div>
+            <div class="form-group">
+              <label for="challenge">What's your biggest compliance challenge?</label>
+              <textarea id="challenge" name="challenge" rows="3" placeholder="e.g. We need ISO 27001 to close an enterprise deal..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message →</button>
+            <p class="form-disclaimer">We respond within 1 business day.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>Message received.</h3>
+            <p>We'll be in touch within 1 business day.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -196,5 +287,30 @@
     </div>
   </footer>
 
+<script>
+  // Form success state
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        } else {
+          alert('Something went wrong. Please email us directly at hello@radras.com');
+        }
+      } catch(err) {
+        alert('Something went wrong. Please email us directly at hello@radras.com');
+      }
+    });
+  }
+</script>
 </body>
 </html>
